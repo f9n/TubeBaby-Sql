@@ -8,15 +8,15 @@ CREATE TABLE Hospital (
 	primary key (hospital_no)
 );
 
-DROP TABLE Doktor;
-CREATE TABLE Doktor (
-	dr_ad		 		varchar(15) not null,
-	dr_soyad 		varchar(15) not null,
-	dr_no				varchar(12) not null,
-	hastane_no	varchar(12) not null,
-	dr_cep_tel	varchar(12),
+DROP TABLE Doctor;
+CREATE TABLE Doctor (
+	dr_name		 				varchar(15) not null,
+	dr_lname 					varchar(15) not null,
+	dr_no							varchar(12) not null,
+	hospital_no	    	varchar(12) not null,
+	dr_cell_telephone	varchar(12),
 	primary key	(dr_no),
-	foreign key (hastane_no) references Hastane(hastane_no)
+	foreign key (hospital_no) references Hospital(hospital_no)
 );
 
 DROP TABLE Hasta;
