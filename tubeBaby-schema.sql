@@ -32,17 +32,17 @@ CREATE TABLE Patient (
 	foreign key (dr_no) references Doctor(dr_no)
 );
 
-DROP TABLE HastaEsi;
-CREATE TABLE HastaEsi (
-	es_ad		 		varchar(15) not null,
-	es_soyad 		varchar(15) not null,
-	es_tc_no		varchar(12) not null,
-	es_bdate		date,
-	es_cep_tel	varchar(12),
-	es_sex			char,
-	hasta_tc_no	varchar(15) not null,
-	primary key (es_tc_no),
-	foreign key (hasta_tc_no) references Hasta(hasta_tc_no)
+DROP TABLE PatientPartner;
+CREATE TABLE PatientPartner (
+	pp_name         varchar(15) not null,
+	pp_lname        varchar(15) not null,
+	pp_tc_no        varchar(12) not null,
+	pp_bdate        date,
+	pp_cell_tel     varchar(12),
+	pp_sex          char,
+	patient_tc_no   varchar(15) not null,
+	primary key (pp_tc_no),
+	foreign key (patient_tc_no) references Patient(patient_tc_no)
 );
 
 DROP TABLE Aile;
