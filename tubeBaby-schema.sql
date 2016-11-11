@@ -1,8 +1,8 @@
 
 DROP TABLE Hospital;
 CREATE TABLE Hospital (
-	hospital_no	       varchar(12) not null,
-	hospital_name	     varchar(12) not null,
+	hospital_no        varchar(12) not null,
+	hospital_name      varchar(12) not null,
 	hospital_address   varchar(20) not null,
 	hospital_telephone varchar(12) not null,
 	primary key (hospital_no)
@@ -10,12 +10,12 @@ CREATE TABLE Hospital (
 
 DROP TABLE Doctor;
 CREATE TABLE Doctor (
-	dr_name		 				varchar(15) not null,
-	dr_lname 					varchar(15) not null,
-	dr_no							varchar(12) not null,
-	hospital_no	    	varchar(12) not null,
-	dr_cell_telephone	varchar(12),
-	primary key	(dr_no),
+	dr_name           varchar(15) not null,
+	dr_lname          varchar(15) not null,
+	dr_no             varchar(12) not null,
+	hospital_no       varchar(12) not null,
+	dr_cell_telephone varchar(12),
+	primary key (dr_no),
 	foreign key (hospital_no) references Hospital(hospital_no)
 );
 
