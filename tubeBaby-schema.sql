@@ -19,17 +19,17 @@ CREATE TABLE Doctor (
 	foreign key (hospital_no) references Hospital(hospital_no)
 );
 
-DROP TABLE Hasta;
-CREATE TABLE Hasta (
-	hasta_ad		 	varchar(15) not null,
-	hasta_soyad 	varchar(15) not null,
-	hasta_tc_no		varchar(12) not null,
-	hasta_bdate		date,
-	hasta_cep_tel	varchar(12),
-	hasta_sex			varchar,
-	dr_no					varchar(12) not null,
-	primary key (hasta_tc_no),
-	foreign key (dr_no) references Doktor(dr_no)
+DROP TABLE Patient;
+CREATE TABLE Patient (
+	patient_name     varchar(15) not null,
+	patient_lname    varchar(15) not null,
+	patient_tc_no    varchar(12) not null,
+	patient_bdate    date,
+	patient_cell_tel varchar(12),
+	patient_sex      varchar,
+	dr_no            varchar(12) not null,
+	primary key (patient_tc_no),
+	foreign key (dr_no) references Doctor(dr_no)
 );
 
 DROP TABLE HastaEsi;
