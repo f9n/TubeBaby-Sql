@@ -1,11 +1,11 @@
 
-DROP TABLE Hastane;
-CREATE TABLE Hastane (
-	hastane_no			varchar(12) not null,
-	hastane_ismi		varchar(12) not null,
-	hastane_adresi	varchar(20) not null,
-	hastane_tel			varchar(12) not null,
-	primary key (hastane_no)
+DROP TABLE Hospital;
+CREATE TABLE Hospital (
+	hospital_no	       varchar(12) not null,
+	hospital_name	     varchar(12) not null,
+	hospital_address   varchar(20) not null,
+	hospital_telephone varchar(12) not null,
+	primary key (hospital_no)
 );
 
 DROP TABLE Doktor;
