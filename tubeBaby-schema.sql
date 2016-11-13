@@ -45,23 +45,23 @@ CREATE TABLE PatientPartner (
 	foreign key (patient_tc_no) references Patient(patient_tc_no)
 );
 
-DROP TABLE Aile;
-CREATE TABLE Aile (
-	--aile_no				    smallint,	-- aile no kavramina gerek yok?	
-																-- istersek foreign keyleri birlestirebiliriz.					
-	a_evlilik_tarihi	date,
-	a_hasta_tc				varchar(12) not null,
-	a_es_tc						varchar(12) not null, 		
-	aile_adress				varchar(30),
-	a_haveAchild			boolean default false,
-	primary key (a_hasta_tc, a_es_tc),
-	foreign key (a_hasta_tc) references Hasta(hasta_tc_no),
-	foreign key (a_es_tc) references HastaEsi(es_tc_no)
+DROP TABLE Family;
+CREATE TABLE Family (
+        --family_no   smallint, -- family no kavramina gerek yok?	
+                              -- istersek foreign keyleri birlestirebiliriz.					
+	f_date_marriage       date,
+	f_patient_tc          varchar(12) not null,
+	f_couple_tc           varchar(12) not null, 		
+	f_adress              varchar(30),
+	f_haveAchild          boolean default false,
+	primary key (f_patient_tc, f_couple_tc),
+	foreign key (f_patient_tc) references Patient(patient_tc_no),
+	foreign key (f_couple_tc) references PatientPartner(pp_tc_no)
 );
 
 DROP TABLE Odalar;
 CREATE TABLE Odalar (
-	hastane_no				varchar(12) not null,
+	hastane_no			varchar(12) not null,
 	dr_no			        varchar(12), -- illa odanin dolu olmasi gerekmiyor.
 	oda_no				    varchar(12) not null,
 	kat								char not null,
