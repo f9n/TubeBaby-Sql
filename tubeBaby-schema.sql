@@ -59,15 +59,15 @@ CREATE TABLE Family (
 	foreign key (f_couple_tc) references PatientPartner(pp_tc_no)
 );
 
-DROP TABLE Odalar;
-CREATE TABLE Odalar (
-	hastane_no			varchar(12) not null,
-	dr_no			        varchar(12), -- illa odanin dolu olmasi gerekmiyor.
-	oda_no				    varchar(12) not null,
-	kat								char not null,
-	primary key (oda_no),
-	foreign key (hastane_no) references Hastane(hastane_no),
-	foreign key (dr_no)  references Doktor(dr_no)
+DROP TABLE Rooms;
+CREATE TABLE Rooms (
+	hospital_no    varchar(12) not null,
+	dr_no          varchar(12), -- illa odanin dolu olmasi gerekmiyor.
+	room_no        varchar(12) not null,
+	floor            char not null,
+	primary key (room_no),
+	foreign key (hospital_no) references Hospital(hospital_no),
+	foreign key (dr_no)  references Doctor(dr_no)
 );
 
 DROP TABLE Telefon_info;
