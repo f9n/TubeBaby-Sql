@@ -56,7 +56,7 @@ CREATE TABLE Family (
 	f_haveAchild          boolean default false,
 	primary key (f_patient_tc, f_couple_tc),
 	foreign key (f_patient_tc) references Patient(patient_tc_no),
-	foreign key (f_couple_tc) references PatientPartner(pp_tc_no)
+	foreign key (f_couple_tc)  references PatientPartner(pp_tc_no)
 );
 
 DROP TABLE Rooms;
@@ -67,7 +67,7 @@ CREATE TABLE Rooms (
 	floor          char not null,
 	primary key (room_no),
 	foreign key (hospital_no) references Hospital(hospital_no),
-	foreign key (dr_no)  references Doctor(dr_no)
+	foreign key (dr_no)       references Doctor(dr_no)
 );
 
 DROP TABLE PhoneNumber;
@@ -82,12 +82,12 @@ CREATE TABLE PhoneNumber (
 	foreign key (room_no)     references Rooms(room_no)
 );
 
-DROP TABLE Ilac;
-CREATE TABLE Ilac (
-	ilac_no					varchar(12) not null,
-	ilac_ismi				varchar(12) not null,
-	ilac_turu				varchar(30),
-	primary key (ilac_no)
+DROP TABLE Pill;
+CREATE TABLE Pill (
+	pill_no       varchar(12) not null,
+	pill_name     varchar(12) not null,
+	pill_type     varchar(30),
+	primary key (pill_no)
 );
 
 DROP TABLE Ilac_Hasta;
