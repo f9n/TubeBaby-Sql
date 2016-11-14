@@ -70,16 +70,16 @@ CREATE TABLE Rooms (
 	foreign key (dr_no)  references Doctor(dr_no)
 );
 
-DROP TABLE Telefon_info;
-CREATE TABLE Telefon_info (
-	hastane_no		varchar(12) not null,
-	dr_no					varchar(12), -- illa odanin dolu olmasi gerekmiyor.
-	oda_no				varchar(12) not null,
-	tel_no				varchar(12) not null,
-	primary key (tel_no),
-	foreign key (hastane_no) references Hastane(hastane_no),
-	foreign key (dr_no) 	 references Doktor(dr_no),
-	foreign key (oda_no) 	 references Odalar(oda_no)
+DROP TABLE PhoneNumber;
+CREATE TABLE PhoneNumber (
+	hospital_no       varchar(12) not null,
+	dr_no             varchar(12), -- illa odanin dolu olmasi gerekmiyor.
+	room_no           varchar(12) not null,
+	phone_no          varchar(12) not null,
+	primary key (phone_no),
+	foreign key (hospital_no) references Hospital(hospital_no),
+	foreign key (dr_no)       references Doctor(dr_no),
+	foreign key (room_no)     references Rooms(room_no)
 );
 
 DROP TABLE Ilac;
