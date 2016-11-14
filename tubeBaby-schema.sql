@@ -90,12 +90,11 @@ CREATE TABLE Pill (
 	primary key (pill_no)
 );
 
-DROP TABLE Ilac_Hasta;
-CREATE TABLE Ilac_Hasta (
-	hasta_tc_no			varchar(12),
-	ilac_no					varchar(12),
-	primary key (hasta_tc_no, ilac_no),
-	foreign key (hasta_tc_no) references Hasta(hasta_tc_no),
-	foreign key (ilac_no) references Ilac(ilac_no)
+DROP TABLE PillPatient;
+CREATE TABLE PillPatient (
+	patient_tc_no    varchar(12),
+	pill_no          varchar(12),
+	primary key (patient_tc_no, pill_no),
+	foreign key (patient_tc_no) references Patient(patient_tc_no),
+	foreign key (pill_no)       references Pill(pill_no)
 );
-
