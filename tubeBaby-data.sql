@@ -1,11 +1,12 @@
 INSERT INTO Hospital VALUES ('01','Yeni Hayat','Esenler Istanbul','02124547213');
 INSERT INTO Hospital VALUES('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
 
-INSERT INTO Doktor VALUES ('Yılmaz','Çöllü','01','01','05326783451');
-INSERT INTO Doktor VALUES ('Ahnet','Ağar','02','01','05348239129');
-INSERT INTO Doktor VALUES ('Sait','Akın','03','01','05439123884');
-INSERT INTO Doktor VALUES ('Zafer','Çolak','04','01','05024914812');
-INSERT INTO Doktor VALUES ('Yasin','Dilber','05','01','05326783451');
+INSERT INTO Doctor VALUES ('Yılmaz','Çöllü','01', 1000, '01','05326783451');
+INSERT INTO Doctor VALUES ('Ahnet','Ağar','02', 2500, '02','05348239129');
+INSERT INTO Doctor VALUES ('Sait','Akın','03', 5000, '02','05439123884');
+INSERT INTO Doctor VALUES ('Zafer','Çolak','04', 10000, '01','05024914812');
+INSERT INTO Doctor VALUES ('Yasin','Dilber','05', 6350, '01','05326783451');
+INSERT INTO Doctor VALUES ('Yasin', 'Ozdur', '06', 12060, '02', '05555522333');
 
 INSERT INTO Hasta VALUES 
 	('Ayse','Aslan','73098471284','1982-11-07','05051238743','K','01');
