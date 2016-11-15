@@ -13,6 +13,7 @@ CREATE TABLE Doctor (
 	dr_name           varchar(15) not null,
 	dr_lname          varchar(15) not null,
 	dr_no             varchar(12) not null,
+	dr_salary         int,
 	hospital_no       varchar(12) not null,
 	dr_cell_telephone varchar(12),
 	primary key (dr_no),
