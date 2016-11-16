@@ -1,5 +1,6 @@
 INSERT INTO Hospital VALUES ('01','Yeni Hayat','Esenler Istanbul','02124547213');
-INSERT INTO Hospital VALUES('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
+INSERT INTO Hospital VALUES	('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
+INSERT INTO Hospital VALUES	('03', 'Gelecek Hayat', 'Sisle Istanbul', '02122221111');
 
 INSERT INTO Doctor VALUES ('Yılmaz','Çöllü','01', 1000, '01','05326783451');
 INSERT INTO Doctor VALUES ('Ahnet','Ağar','02', 2500, '02','05348239129');
