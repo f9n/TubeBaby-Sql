@@ -2,7 +2,7 @@
 DROP TABLE Hospital;
 CREATE TABLE Hospital (
 	hospital_no        varchar(12) not null,
-	hospital_name      varchar(12) not null,
+	hospital_name      varchar(20) not null,
 	hospital_address   varchar(20) not null,
 	hospital_telephone varchar(12) not null,
 	primary key (hospital_no)
@@ -66,7 +66,7 @@ CREATE TABLE Rooms (
 	dr_no          varchar(12), -- illa odanin dolu olmasi gerekmiyor.
 	room_no        varchar(12) not null,
 	floor          char not null,
-	primary key (room_no),
+	primary key (hospital_no, room_no),
 	foreign key (hospital_no) references Hospital(hospital_no),
 	foreign key (dr_no)       references Doctor(dr_no)
 );
@@ -80,7 +80,7 @@ CREATE TABLE PhoneNumber (
 	primary key (phone_no),
 	foreign key (hospital_no) references Hospital(hospital_no),
 	foreign key (dr_no)       references Doctor(dr_no),
-	foreign key (room_no)     references Rooms(room_no)
+	foreign key (room_no, hospital_no)     references Rooms(room_no, hospital_no)
 );
 
 DROP TABLE Pill;
