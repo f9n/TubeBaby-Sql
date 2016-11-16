@@ -75,14 +75,23 @@ INSERT INTO Family VALUES ('2015-01-10', '93726394710', '83526394118', 'Dikilita
 INSERT INTO Family VALUES ('2015-01-11', '57921992638', '12321992612', 'Fulya/Mecidiyekoy');
 INSERT INTO Family VALUES ('2015-01-12', '68364019283', '44364019283', 'YTU Davutpasa/Cevizlibag');
 
-INSERT INTO Odalar VALUES ('01', '01', '101', '1');
-INSERT INTO Odalar VALUES ('01', '02', '102', '1');
-INSERT INTO Odalar VALUES ('01', '03', '201', '2');
-INSERT INTO Odalar VALUES ('01', '04', '202', '2');
-INSERT INTO Odalar VALUES ('01', '05', '301', '3');
-INSERT INTO Odalar VALUES ('01', null, '302', '3');
-INSERT INTO Odalar VALUES ('01', null, '401', '4');
-INSERT INTO Odalar VALUES ('01', null, '402', '4');
+INSERT INTO Rooms VALUES ('01', '01', '101', '1');
+INSERT INTO Rooms VALUES ('01', '02', '102', '1');
+INSERT INTO Rooms VALUES ('01', '03', '201', '2');
+INSERT INTO Rooms VALUES ('01', '04', '202', '2');
+INSERT INTO Rooms VALUES ('01', null, '301', '3');
+INSERT INTO Rooms VALUES ('01', null, '302', '3');
+INSERT INTO Rooms VALUES ('01', null, '401', '4');
+INSERT INTO Rooms VALUES ('01', null, '402', '4');
+INSERT INTO Rooms VALUES ('01', null, '501', '5');
+
+INSERT INTO Rooms VALUES ('02', '05', '101', '1');
+INSERT INTO Rooms VALUES ('02', '06', '102', '1');
+INSERT INTO Rooms VALUES ('02', '07', '201', '2');
+INSERT INTO Rooms VALUES ('02', null, '202', '2');
+
+INSERT INTO Rooms VALUES ('03', '08', '101', '1');
+INSERT INTO Rooms VALUES ('03', null, '102', '1');
 
 INSERT INTO Telefon_info VALUES ('01', '01', '101', '02122620101');
 INSERT INTO Telefon_info VALUES ('01', '02', '102', '02122620102');
