@@ -1,8 +1,8 @@
--- 											hospital_no, hospital_name, hospital_addres, hospital_cell
+-- 											hospital_no, hospital_name, hospital_addres, hospital_telephone
 INSERT INTO Hospital VALUES ('01','Yeni Hayat','Esenler Istanbul','02124547213');
 INSERT INTO Hospital VALUES	('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
 INSERT INTO Hospital VALUES	('03', 'Gelecek Hayat', 'Sisle Istanbul', '02122221111');
---											dr_name, dr_lname, dr_no, dr_salary, hospital_no, dr_cell_phone
+--											dr_name, dr_lname, dr_no, dr_salary, hospital_no, dr_cell_telephone
 INSERT INTO Doctor VALUES ('Yılmaz'	,'Çöllü'	,'01', 1000	, '01','05326783451');
 INSERT INTO Doctor VALUES ('Ahnet'	,'Ağar'		,'02', 2500	, '01','05348239129');
 INSERT INTO Doctor VALUES ('Sait'		,'Akın'		,'03', 5000	, '01','05439123884');
@@ -11,7 +11,7 @@ INSERT INTO Doctor VALUES ('Yasin'	,'Dilber'	,'05', 6350	, '02','05326783451');
 INSERT INTO Doctor VALUES ('Yasin'	,'Ozdur'	,'06', 12060, '02','05555522333');
 INSERT INTO Doctor VALUES ('Emre'		,'Guler'	,'07', 6700	, '02','05424544454');
 INSERT INTO Doctor VALUES ('Ilhan'	,'Gezer'	,'08', 8740	, '03','05616161616');
---				patient_name, patient_lname, patient_tc_no, patient_bdate, patient_cell_phone, patient_sex, dr_no
+--				patient_name, patient_lname, patient_tc_no, patient_bdate, patient_cell_tel, patient_sex, dr_no
 INSERT INTO Patient VALUES 
 	('Ayse','Aslan','73098471284','1982-11-07','05051238743','K','01');
 INSERT INTO Patient VALUES
@@ -36,31 +36,30 @@ INSERT INTO Patient VALUES
 	('Ayten','Elagöz','57921992638','1989-03-12','05431982734','K','06');
 INSERT INTO Patient VALUES 
 	('Aylin','Gültekin','68364019283','1991-03-15','05448214852','K','07');
-	
-
-INSERT INTO HastaEsi VALUES 
+--        pp_name, pp_lname, pp_tc_no, pp_bdate, pp_cell_tel, pp_sex, patient_tc_no
+INSERT INTO PatientPartner VALUES 
 	('Kemal','Aslan','29375103762','1980-02-07','05440127391','E','73098471284');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Turgut','Ates','78126345821','1985-12-12','05349126721','E','83017288311');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Fatih','Söylemez','74389163012','1985-11-15','05387128734','E','29118636541');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Cihan','Gürbüz','86493209471','1987-05-02','05304214312','E','78173001294');
-INSERT INTO HastaEsi VALUES
+INSERT INTO PatientPartner VALUES
 	('Ozgur','Mutlu','94736648391','1990-04-12','05366871155','E','72197410026');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Furkan','Guzel','75320124311','1983-06-19','05557916111','E','39120126582');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Hüsnü','Tunc','23109448643','1993-02-21','05388919861','E','81209448264');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Emre','Çelik','52173520532','1991-02-11','05319127943','E','79173520917');
-INSERT INTO HastaEsi VALUES
+INSERT INTO PatientPartner VALUES
 	('Nazim','Zeytin','42131643957','1984-12-02','05337619667','E','29831643381');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Harun','Demirci','83526394118','1990-01-25','05332639434','E','93726394710');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Musa','Elagöz','12321992612','1983-03-12','05431982143','E','57921992638');
-INSERT INTO HastaEsi VALUES 
+INSERT INTO PatientPartner VALUES 
 	('Cahit','Gültekin','44364019283','1985-07-15','05448214112','E','68364019283');
 	
 INSERT INTO Aile VALUES ('2015-01-01', '73098471284', '29375103762', 'Kemerburgaz/Sariyer');
