@@ -93,14 +93,14 @@ INSERT INTO Rooms VALUES ('02', null, '202', '2');
 INSERT INTO Rooms VALUES ('03', '08', '101', '1');
 INSERT INTO Rooms VALUES ('03', null, '102', '1');
 
-INSERT INTO Telefon_info VALUES ('01', '01', '101', '02122620101');
-INSERT INTO Telefon_info VALUES ('01', '02', '102', '02122620102');
-INSERT INTO Telefon_info VALUES ('01', '03', '201', '02122620201');
-INSERT INTO Telefon_info VALUES ('01', '04', '202', '02122620202');
-INSERT INTO Telefon_info VALUES ('01', '05', '301', '02122620301');
-INSERT INTO Telefon_info VALUES ('01', null, '302', '02122620302');
-INSERT INTO Telefon_info VALUES ('01', null, '401', '02122620401');
-INSERT INTO Telefon_info VALUES ('01', null, '402', '02122620402');
+INSERT INTO PhoneNumber VALUES ('01', '01', '101', '02122620101');
+INSERT INTO PhoneNumber VALUES ('01', '02', '102', '02122620102');
+INSERT INTO PhoneNumber VALUES ('01', '03', '201', '02122620201');
+INSERT INTO PhoneNumber VALUES ('01', '04', '202', '02122620202');
+INSERT INTO PhoneNumber VALUES ('01', '05', '301', '02122620301');
+INSERT INTO PhoneNumber VALUES ('01', null, '302', '02122620302');
+INSERT INTO PhoneNumber VALUES ('01', null, '401', '02122620401');
+INSERT INTO PhoneNumber VALUES ('01', null, '402', '02122620402');
 
 INSERT INTO Ilac VALUES ('0001', 'Opuros', 'Sperm artirici');
 INSERT INTO Ilac VALUES ('0002', 'Puros', 'Yumurta artirici');
