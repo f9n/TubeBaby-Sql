@@ -1,7 +1,7 @@
--- 											hospital_no, hospital_name, hospital_addres, hospital_telephone
-INSERT INTO Hospital VALUES ('01','Yeni Hayat','Esenler Istanbul','02124547213');
-INSERT INTO Hospital VALUES	('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
-INSERT INTO Hospital VALUES	('03', 'Gelecek Hayat', 'Sisle Istanbul', '02122221111');
+--              hospital_no, hospital_name, hospital_addres, hospital_telephone
+INSERT INTO Hospital VALUES ('01', 'Yeni Hayat','Esenler Istanbul','02124547213');
+INSERT INTO Hospital VALUES ('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
+INSERT INTO Hospital VALUES ('03', 'Gelecek Hayat', 'Sisle Istanbul', '02122221111');
 --											dr_name, dr_lname, dr_no, dr_salary, hospital_no, dr_cell_telephone
 INSERT INTO Doctor VALUES ('Yılmaz'	,'Çöllü'	,'01', 1000	, '01','05326783451');
 INSERT INTO Doctor VALUES ('Ahnet'	,'Ağar'		,'02', 2500	, '01','05348239129');
