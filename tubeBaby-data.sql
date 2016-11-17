@@ -11,7 +11,7 @@ INSERT INTO Doctor VALUES ('Yasin' ,'Dilber','05', 6350	, '02','05326783451');
 INSERT INTO Doctor VALUES ('Yasin' ,'Ozdur' ,'06', 12060, '02','05555522333');
 INSERT INTO Doctor VALUES ('Emre'  ,'Guler' ,'07', 6700	, '02','05424544454');
 INSERT INTO Doctor VALUES ('Ilhan' ,'Gezer' ,'08', 8740	, '03','05616161616');
---				patient_name, patient_lname, patient_tc_no, patient_bdate, patient_cell_tel, patient_sex, dr_no
+--            patient_name, patient_lname, patient_tc_no, patient_bdate, patient_cell_tel, patient_sex, dr_no
 INSERT INTO Patient VALUES 
 	('Ayse','Aslan','73098471284','1982-11-07','05051238743','K','01');
 INSERT INTO Patient VALUES
@@ -36,7 +36,7 @@ INSERT INTO Patient VALUES
 	('Ayten','Elagöz','57921992638','1989-03-12','05431982734','K','06');
 INSERT INTO Patient VALUES 
 	('Aylin','Gültekin','68364019283','1991-03-15','05448214852','K','07');
---        pp_name, pp_lname, pp_tc_no, pp_bdate, pp_cell_tel, pp_sex, patient_tc_no
+--      pp_name, pp_lname, pp_tc_no, pp_bdate, pp_cell_tel, pp_sex, patient_tc_no
 INSERT INTO PatientPartner VALUES 
 	('Kemal','Aslan','29375103762','1980-02-07','05440127391','E','73098471284');
 INSERT INTO PatientPartner VALUES 
@@ -74,7 +74,7 @@ INSERT INTO Family VALUES ('2015-01-09', '29831643381', '42131643957', 'Tarabya/
 INSERT INTO Family VALUES ('2015-01-10', '93726394710', '83526394118', 'Dikilitas/Besiktas');
 INSERT INTO Family VALUES ('2015-01-11', '57921992638', '12321992612', 'Fulya/Mecidiyekoy');
 INSERT INTO Family VALUES ('2015-01-12', '68364019283', '44364019283', 'YTU Davutpasa/Cevizlibag');
--- 		hospital_no, dr_no, room_no, floor
+--        hospital_no, dr_no, room_no, floor
 INSERT INTO Rooms VALUES ('01', '01', '101', '1');
 INSERT INTO Rooms VALUES ('01', '02', '102', '1');
 INSERT INTO Rooms VALUES ('01', '03', '201', '2');
@@ -92,7 +92,7 @@ INSERT INTO Rooms VALUES ('02', null, '202', '2');
 
 INSERT INTO Rooms VALUES ('03', '08', '101', '1');
 INSERT INTO Rooms VALUES ('03', null, '102', '1');
---     hospital_no, dr_no, room_no, phone_no
+--      hospital_no, dr_no, room_no, phone_no
 INSERT INTO PhoneNumber VALUES ('01', '01', '101', '02122621101');
 INSERT INTO PhoneNumber VALUES ('01', '02', '102', '02122621102');
 INSERT INTO PhoneNumber VALUES ('01', '03', '201', '02122621201');
