@@ -74,7 +74,7 @@ INSERT INTO Family VALUES ('2015-01-09', '29831643381', '42131643957', 'Tarabya/
 INSERT INTO Family VALUES ('2015-01-10', '93726394710', '83526394118', 'Dikilitas/Besiktas');
 INSERT INTO Family VALUES ('2015-01-11', '57921992638', '12321992612', 'Fulya/Mecidiyekoy');
 INSERT INTO Family VALUES ('2015-01-12', '68364019283', '44364019283', 'YTU Davutpasa/Cevizlibag');
-
+-- 		hospital_no, dr_no, room_no, floor
 INSERT INTO Rooms VALUES ('01', '01', '101', '1');
 INSERT INTO Rooms VALUES ('01', '02', '102', '1');
 INSERT INTO Rooms VALUES ('01', '03', '201', '2');
@@ -92,15 +92,24 @@ INSERT INTO Rooms VALUES ('02', null, '202', '2');
 
 INSERT INTO Rooms VALUES ('03', '08', '101', '1');
 INSERT INTO Rooms VALUES ('03', null, '102', '1');
+--     hospital_no, dr_no, room_no, phone_no
+INSERT INTO PhoneNumber VALUES ('01', '01', '101', '02122621101');
+INSERT INTO PhoneNumber VALUES ('01', '02', '102', '02122621102');
+INSERT INTO PhoneNumber VALUES ('01', '03', '201', '02122621201');
+INSERT INTO PhoneNumber VALUES ('01', '04', '202', '02122621202');
+INSERT INTO PhoneNumber VALUES ('01', null, '301', '02122621301');
+INSERT INTO PhoneNumber VALUES ('01', null, '302', '02122621302');
+INSERT INTO PhoneNumber VALUES ('01', null, '401', '02122621401');
+INSERT INTO PhoneNumber VALUES ('01', null, '402', '02122621402');
 
-INSERT INTO PhoneNumber VALUES ('01', '01', '101', '02122620101');
-INSERT INTO PhoneNumber VALUES ('01', '02', '102', '02122620102');
-INSERT INTO PhoneNumber VALUES ('01', '03', '201', '02122620201');
-INSERT INTO PhoneNumber VALUES ('01', '04', '202', '02122620202');
-INSERT INTO PhoneNumber VALUES ('01', '05', '301', '02122620301');
-INSERT INTO PhoneNumber VALUES ('01', null, '302', '02122620302');
-INSERT INTO PhoneNumber VALUES ('01', null, '401', '02122620401');
-INSERT INTO PhoneNumber VALUES ('01', null, '402', '02122620402');
+INSERT INTO PhoneNumber VALUES ('02', '05', '101', '02122622301');
+INSERT INTO PhoneNumber VALUES ('02', '06', '102', '02122622302');
+INSERT INTO PhoneNumber VALUES ('02', '07', '201', '02122622401');
+INSERT INTO PhoneNumber VALUES ('02', null, '202', '02122622402');
+
+INSERT INTO PhoneNumber VALUES ('03', '08', '101', '02122623401');
+INSERT INTO PhoneNumber VALUES ('03', null, '102', '02122623402');
+
 
 INSERT INTO Ilac VALUES ('0001', 'Opuros', 'Sperm artirici');
 INSERT INTO Ilac VALUES ('0002', 'Puros', 'Yumurta artirici');
