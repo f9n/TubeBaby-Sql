@@ -109,20 +109,19 @@ INSERT INTO PhoneNumber VALUES ('02', null, '202', '02122622402');
 
 INSERT INTO PhoneNumber VALUES ('03', '08', '101', '02122623401');
 INSERT INTO PhoneNumber VALUES ('03', null, '102', '02122623402');
-
-
-INSERT INTO Ilac VALUES ('0001', 'Opuros', 'Sperm artirici');
-INSERT INTO Ilac VALUES ('0002', 'Puros', 'Yumurta artirici');
-INSERT INTO Ilac VALUES ('0003', 'Aspirin', 'Acilara son');
-INSERT INTO Ilac VALUES ('0004', 'Batiodin', 'Gargara');
-INSERT INTO Ilac VALUES ('0005', 'Beklazon', 'Krem');
-INSERT INTO Ilac VALUES ('0006', 'Burnil', 'Burun Damlasi');
-INSERT INTO Ilac VALUES ('0007', 'Awamys', 'Burun Spreyi');
-INSERT INTO Ilac VALUES ('0008', 'Lenovo', 'Pc Markasi');
-INSERT INTO Ilac VALUES ('0009', 'Asus', 'Oda bir Pc Markasidir.');
-INSERT INTO Ilac VALUES ('0010', 'Samsung', 'Bu farkli telefon markasidir.');
-INSERT INTO Ilac VALUES ('0011', 'Omer', 'Insan ve erkektir.');
-INSERT INTO Ilac VALUES ('0012', 'Furkan', 'Labi veren hocadir.');
+--         pill_no, pill_name, pill_type
+INSERT INTO Pill VALUES ('0001', 'Opuros', 'Sperm artirici');
+INSERT INTO Pill VALUES ('0002', 'Puros', 'Yumurta artirici');
+INSERT INTO Pill VALUES ('0003', 'Aspirin', 'Acilara son');
+INSERT INTO Pill VALUES ('0004', 'Batiodin', 'Gargara');
+INSERT INTO Pill VALUES ('0005', 'Beklazon', 'Krem');
+INSERT INTO Pill VALUES ('0006', 'Burnil', 'Burun Damlasi');
+INSERT INTO Pill VALUES ('0007', 'Awamys', 'Burun Spreyi');
+INSERT INTO Pill VALUES ('0008', 'Lenovo', 'Pc Markasi');
+INSERT INTO Pill VALUES ('0009', 'Asus', 'Oda bir Pc Markasidir.');
+INSERT INTO Pill VALUES ('0010', 'Samsung', 'Bu farkli telefon markasidir.');
+INSERT INTO Pill VALUES ('0011', 'Omer', 'Insan ve erkektir.');
+INSERT INTO Pill VALUES ('0012', 'Furkan', 'Labi veren hocadir.');
 
 INSERT INTO Ilac_Hasta VALUES ('73098471284', '0002');
 INSERT INTO Ilac_Hasta VALUES ('73098471284', '0003');
