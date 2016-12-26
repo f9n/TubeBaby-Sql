@@ -2,15 +2,15 @@
 INSERT INTO Hospital VALUES ('01', 'Yeni Hayat','Esenler Istanbul','02124547213');
 INSERT INTO Hospital VALUES ('02', 'Eski Hayat', 'Davutpasa Istanbul', '02123454444');
 INSERT INTO Hospital VALUES ('03', 'Gelecek Hayat', 'Sisle Istanbul', '02122221111');
---              dr_name, dr_lname, dr_no, dr_salary, hospital_no, dr_cell_telephone
-INSERT INTO Doctor VALUES ('Yılmaz','Çöllü' ,'01', 1000	, '01','05326783451');
-INSERT INTO Doctor VALUES ('Ahnet' ,'Ağar'  ,'02', 2500	, '01','05348239129');
-INSERT INTO Doctor VALUES ('Sait'  ,'Akın'  ,'03', 5000	, '01','05439123884');
-INSERT INTO Doctor VALUES ('Zafer' ,'Çolak' ,'04', 10000, '01','05024914812');
-INSERT INTO Doctor VALUES ('Yasin' ,'Dilber','05', 6350	, '02','05326783451');
-INSERT INTO Doctor VALUES ('Yasin' ,'Ozdur' ,'06', 12060, '02','05555522333');
-INSERT INTO Doctor VALUES ('Emre'  ,'Guler' ,'07', 6700	, '02','05424544454');
-INSERT INTO Doctor VALUES ('Ilhan' ,'Gezer' ,'08', 8740	, '03','05616161616');
+--              dr_no, dr_name, dr_lname, dr_email, dr_cell_telephone, hospital_no, dr_hire_date, dr_salary
+INSERT INTO Doctor VALUES ('01', 'Yılmaz','Çöllü', null, '05326783451', '01', '2015-01-01', 1000);
+INSERT INTO Doctor VALUES ('02', 'Ahnet' ,'Ağar' , null, '05348239129', '01', '2010-08-13', 2500);
+INSERT INTO Doctor VALUES ('03', 'Sait'  ,'Akın' , null, '05439123884', '01', '2008-02-14', 5000);
+INSERT INTO Doctor VALUES ('04', 'Zafer' ,'Çolak', null, '05024914812', '01', '2005-08-01', 10000);
+INSERT INTO Doctor VALUES ('05', 'Yasin' ,'Dilber',null, '05326783451', '02', '2010-12-12', 6350);
+INSERT INTO Doctor VALUES ('06', 'Yasin' ,'Ozdur', null, '05555522333', '02', '2000-06-04', 12350);
+INSERT INTO Doctor VALUES ('07', 'Emre'  ,'Guler', null, '05424544454', '02', '2008-10-28', 6780);
+INSERT INTO Doctor VALUES ('08', 'Ilhan' ,'Gezer', null, '05616161616', '03', '2005-05-05', 8630);
 --            patient_name, patient_lname, patient_tc_no, patient_bdate, patient_cell_tel, patient_sex, dr_no
 INSERT INTO Patient VALUES 
 	('Ayse','Aslan','73098471284','1982-11-07','05051238743','K','01');
