@@ -10,12 +10,14 @@ CREATE TABLE Hospital (
 
 DROP TABLE Doctor;
 CREATE TABLE Doctor (
+	dr_no             varchar(12) not null,
 	dr_name           varchar(15) not null,
 	dr_lname          varchar(15) not null,
-	dr_no             varchar(12) not null,
-	dr_salary         int,
-	hospital_no       varchar(12) not null,
+	dr_email	  varchar(15),
 	dr_cell_telephone varchar(12),
+	hospital_no       varchar(12) not null,
+	dr_hire_date	  date,
+	dr_salary         int,
 	primary key (dr_no),
 	foreign key (hospital_no) references Hospital(hospital_no)
 );
