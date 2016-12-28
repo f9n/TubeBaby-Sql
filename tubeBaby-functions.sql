@@ -1,3 +1,4 @@
+------------------------------------------ Functions
 -- 1-) Doktor tablosunda en yüksek ve en düşük maaş arasındaki farkı bulan fankşin  -> Buton ile calıstıracagiz
 CREATE OR REPLACE FUNCTION odev4fonk1 () returns real AS $$
 DECLARE
@@ -40,4 +41,7 @@ END;
 $$ LANGUAGE 'plpgsql';
 
 -- SELECT odev4fonk2('Yasin');
+
+-------------------------------------------------Triggers
+
 
